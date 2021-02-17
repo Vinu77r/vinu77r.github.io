@@ -50,12 +50,29 @@ function App() {
         </div>
         <div className="vr-skills">
           <p className="vr-title vr-title--sm">Skills</p>
-          <div>
-            <div>
+          <div className="vr-skills-cat-list">
+            <div className="vr-skills-cat-item">
               <p className="vr-title vr-title--xs">Development skills</p>
               <div className="vr-skills-list">
                 <div className="vr-skills-item">
+                  <div className="vr-skills-item__icon">
+                    <img src="../images/html.svg" />
+                  </div>
+                  <p className="vr-skills-item__desc">HTML/HTML5</p>
+                </div>
+                <div className="vr-skills-item">
                   <div className="vr-skills-item__icon"></div>
+                  <p className="vr-skills-item__desc">HTML/HTML5</p>
+                </div>
+              </div>
+            </div>
+            <div className="vr-skills-cat-item">
+              <p className="vr-title vr-title--xs">Development skills</p>
+              <div className="vr-skills-list">
+                <div className="vr-skills-item">
+                  <div className="vr-skills-item__icon">
+                    <img src="../images/html.svg" />
+                  </div>
                   <p className="vr-skills-item__desc">HTML/HTML5</p>
                 </div>
                 <div className="vr-skills-item">

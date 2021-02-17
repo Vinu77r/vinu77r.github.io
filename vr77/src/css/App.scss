@@ -14,6 +14,7 @@ $vri: ".vri";
 body {
   padding: 10px;
   background-color: $body-bg;
+  height: 100%;
 }
 p {
   margin: 0;
@@ -21,6 +22,8 @@ p {
 main {
   padding: 0 82px;
   color: $primary_text;
+  flex: 4;
+
 }
 @font-face {
   font-family: "vri";
@@ -48,6 +51,8 @@ main {
 
 #{$vr} {
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
 #{$vr}-header {
   display: flex;
@@ -100,6 +105,15 @@ main {
 }
 #{$vr}-skills {
   margin-top: 100px;
+  &-cat-list{
+    display: flex;
+    margin-top: 40px;
+  }
+  &-cat-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 130px;
+  }
   &-list {
     display: flex;
     margin-top: 40px;
