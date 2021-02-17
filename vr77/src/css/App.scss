@@ -23,7 +23,6 @@ main {
   padding: 0 82px;
   color: $primary_text;
   flex: 4;
-
 }
 @font-face {
   font-family: "vri";
@@ -105,13 +104,14 @@ main {
 }
 #{$vr}-skills {
   margin-top: 100px;
-  &-cat-list{
+  &-cat-list {
     display: flex;
-    margin-top: 40px;
+    flex-wrap: wrap;
   }
-  &-cat-item{
+  &-cat-item {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
     margin-right: 130px;
   }
   &-list {
