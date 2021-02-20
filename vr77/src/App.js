@@ -1,8 +1,7 @@
 import logo from "./logo.svg";
 import "../src/css/App.scss";
 import { render } from "@testing-library/react";
-
-var user_details = require("../src/user.json");
+import { about_user } from "../src/user.json";
 
 function App() {
   return (
@@ -48,10 +47,18 @@ function Header_nav() {
     </header>
   );
 }
+export const about = () => {
+  return
+  ( <div className="vr-about">
+    {about_user.map}
+  </div>);
+};
 function About() {
   return (
     <div className="vr-about">
-      <p className="vr-title vr-title--md vr-about__hello">Hello,</p>
+      <p className="vr-title vr-title--md vr-about__hello">
+        this.about_user.item
+      </p>
       <p className="vr-title vr-title--lg vr-about__name">
         I’m Vinu - UI Engineer
       </p>

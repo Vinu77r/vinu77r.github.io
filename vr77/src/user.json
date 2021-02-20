@@ -1,8 +1,8 @@
-{
-  "pronoun": "Hello",
-  "userName": "Vinu",
-  "jobTitle": "UI Engineer",
-  "aboutUser": "I'm a UI Engineer with 4+ years of experience who loves design, code, and coffee. I have a passion for crafting human-computer interaction and believe in building easy-to-maintain websites/apps by breaking them down into its smallest components. "
-}
-
-
+[
+  {
+    "pronoun": "Hello",
+    "userName": "Vinu",
+    "jobTitle": "UI Engineer",
+    "aboutUser": "I'm a UI Engineer with 4+ years of experience who loves design, code, and coffee. I have a passion for crafting human-computer interaction and believe in building easy-to-maintain websites/apps by breaking them down into its smallest components. "
+  }
+]
