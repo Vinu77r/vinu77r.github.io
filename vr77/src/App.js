@@ -1,7 +1,12 @@
 import logo from "./logo.svg";
 import "../src/css/App.scss";
 import { render } from "@testing-library/react";
-import { about_user } from "../src/user.json";
+import user from "../src/user.json";
+import React, { useState } from "react";
+
+import html from "../src/images/html.svg";
+
+import image from "../src/images/css.svg";
 
 function App() {
   return (
@@ -47,31 +52,26 @@ function Header_nav() {
     </header>
   );
 }
-export const about = () => {
-  return
-  ( <div className="vr-about">
-    {about_user.map}
-  </div>);
-};
 function About() {
+  const about = {
+    title: "Hello",
+    userName: "Vinu",
+    jobTitle: "UI Engineer",
+    aboutUser:
+      "I'm a UI Engineer with 4+ years of experience who loves design, code, and coffee. I have a passion for crafting human-computer interaction and believe in building easy-to-maintain websites/apps by breaking them down into its smallest components. ",
+  };
   return (
     <div className="vr-about">
-      <p className="vr-title vr-title--md vr-about__hello">
-        this.about_user.item
-      </p>
+      <p className="vr-title vr-title--md vr-about__hello">{about.title}</p>
       <p className="vr-title vr-title--lg vr-about__name">
-        I’m Vinu - UI Engineer
+        {about.userName} - {about.jobTitle}
       </p>
-      <p className="vr-desc vr-about__desc">
-        I'm a UI Engineer with 4+ years of experience who loves design, code,
-        and coffee. I have a passion for crafting human-computer interaction and
-        believe in building easy-to-maintain websites/apps by breaking them down
-        into its smallest components.
-      </p>
+      <p className="vr-desc vr-about__desc">{about.aboutUser}</p>
       <button className="vr-primary-button vr-about__button">Get resume</button>
     </div>
   );
 }
+
 function Skills() {
   return (
     <div className="vr-skills">
@@ -82,13 +82,33 @@ function Skills() {
           <div className="vr-skills-list">
             <div className="vr-skills-item">
               <div className="vr-skills-item__icon">
-                <img src="../images/html.svg" />
+                <img src={html} />
               </div>
               <p className="vr-skills-item__desc">HTML/HTML5</p>
             </div>
             <div className="vr-skills-item">
+              <div className="vr-skills-item__icon">
+                <img src={image} />
+              </div>
+              <p className="vr-skills-item__desc">CSS/CSS3</p>
+            </div>
+            <div className="vr-skills-item">
               <div className="vr-skills-item__icon"></div>
-              <p className="vr-skills-item__desc">HTML/HTML5</p>
+              <p className="vr-skills-item__desc">JavaScript</p>
+            </div>
+            <div className="vr-skills-item">
+              <div className="vr-skills-item__icon">
+                <img src="../src/images/image.svg" />
+              </div>
+              <p className="vr-skills-item__desc">Sassy CSS</p>
+            </div>
+            <div className="vr-skills-item">
+              <div className="vr-skills-item__icon"></div>
+              <p className="vr-skills-item__desc">React.js</p>
+            </div>
+            <div className="vr-skills-item">
+              <div className="vr-skills-item__icon"></div>
+              <p className="vr-skills-item__desc">Expo</p>
             </div>
           </div>
         </div>
