@@ -116,7 +116,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    margin-right: 130px;
+    flex: 1;
   }
   &-list {
     display: flex;
@@ -145,6 +145,91 @@ main {
     }
     &__desc {
       margin-left: 20px;
+    }
+  }
+}
+#{$vr}-experience {
+  margin-top: 100px;
+  &-organization {
+    margin-top: 50px;
+    &-details {
+      &__logo {
+        height: 32px;
+        margin: 0;
+      }
+      &-role-name-wra {
+        margin-top: 30px;
+        display: flex;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      &__role {
+        margin: 0;
+      }
+      &__name {
+        margin: 0;
+      }
+      &-duration-wra {
+        margin-top: 10px;
+        display: flex;
+      }
+      &__timeduration {
+        margin: 0;
+      }
+      &__timeperiod {
+        margin: 0;
+      }
+    }
+    &-responsibility {
+      margin-top: 30px;
+      padding: 0 0 0 15px;
+      li {
+        margin-top: 10px;
+      }
+    }
+    &-projects {
+      margin-top: 60px;
+      &-item {
+        margin-top: 40px;
+        &:first-child {
+          margin-top: 0;
+        }
+        &-header {
+          display: flex;
+        }
+        &__logo {
+          height: 48px;
+          width: 48px;
+          border-radius: 6px;
+          background-color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 20px;
+          box-shadow: 0 0 4px #ddd;
+          img {
+            height: 30px;
+          }
+        }
+        &-title-wra {
+        }
+        &__title {
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        &__url {
+          color: $primary_text;
+          &:visited,
+          &:hover,
+          &:active {
+            color: $primary_text;
+          }
+        }
+        &__desc {
+          margin-top: 20px;
+          line-height: 26px;
+        }
+      }
     }
   }
 }
